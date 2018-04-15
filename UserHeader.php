@@ -1,5 +1,5 @@
-<%@page import="javax.websocket.Session"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!--<%@page import="javax.websocket.Session"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>-->
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -35,16 +35,16 @@
             <header id="first">
                 <hgroup>
                     <div class="container">
-                        <a href="index.jsp" class="logo" alt="Code It Resort & Spa">Code It Resort & Spa</a>
+                        <a href="index.php" class="logo" alt="Code It Resort & Spa">Code It Resort & Spa</a>
                     </div>
                 </hgroup>
                 <div class="sub-nav">
                     <div class="container">
                         <ul>
-                            <li><a href="ContactUs.jsp">CONTACT US </a></li>
-                            <li><a href="Profile.jsp">Profile</a></li>
+                            <li><a href="ContactUs.php">CONTACT US </a></li>
+                            <li><a href="Profile.php">Profile</a></li>
                             <li><a href="LogOut">LogOut</a></li>
-                            <li class="booking"><a href="SearchRoom.jsp">BOOK  NOW</a></li>
+                            <li class="booking"><a href="SearchRoom.php">BOOK  NOW</a></li>
                         </ul> 
                     </div>
                 </div>
@@ -52,22 +52,22 @@
                     <div class="container">
                         <ul>
                             <li class="resort">
-                                <div id="resort"><a href="RoomsAndSuites.jsp" class="" target=""><h3 style="white-space:nowrap;"><span>OUR RESORT</span></h3></a></div>
+                                <div id="resort"><a href="RoomsAndSuites.php" class="" target=""><h3 style="white-space:nowrap;"><span>OUR RESORT</span></h3></a></div>
                             </li>
                             <li class="accomodations">
-                                <div id="accomodations"><a href="PackagesAndOffers.jsp" class="" target=""><h3  style="white-space:nowrap;"><span>OFFERS</span></h3></a></div>
+                                <div id="accomodations"><a href="PackagesAndOffers.php" class="" target=""><h3  style="white-space:nowrap;"><span>OFFERS</span></h3></a></div>
                             </li>
                             <li class="cuisine">
-                                <div id="cuisine"><a href="Dining.jsp" class="" target=""><h3 style="white-space:nowrap;"><span>DINING</span></h3></a></div>
+                                <div id="cuisine"><a href="Dining.php" class="" target=""><h3 style="white-space:nowrap;"><span>DINING</span></h3></a></div>
                             </li>
                             <li class="relax">
-                                <div id="relax"><a href="Spa.jsp" class="" target=""><h3 style="white-space:nowrap;"><span>SPA</span></h3></a></div>
+                                <div id="relax"><a href="Spa.php" class="" target=""><h3 style="white-space:nowrap;"><span>SPA</span></h3></a></div>
                             </li>
                             <li class="reserve">
-                                <div id="reserve"><a href="Meetings.jsp" class="" target=""><h3 style="white-space:nowrap;"><span>MEETINGS</span></h3></a></div>
+                                <div id="reserve"><a href="Meetings.php" class="" target=""><h3 style="white-space:nowrap;"><span>MEETINGS</span></h3></a></div>
                             </li>
                             <li class="activities">
-                                <div id="activities"><a href="Activities.jsp" class="" target=""><h3 style="white-space:nowrap;"><span>ACTIVITIES</span></h3></a></div>
+                                <div id="activities"><a href="Activities.php" class="" target=""><h3 style="white-space:nowrap;"><span>ACTIVITIES</span></h3></a></div>
                             </li>
                         </ul>
                     </div>
