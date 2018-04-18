@@ -3,14 +3,77 @@
   <component name="ChangeListManager">
     <list default="true" id="31f16eaa-8a67-4776-b5f0-2b48c2191812" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminHeader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/ContactUs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManagerHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/ManagerHeader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SignIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/SignIn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SignUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Spa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Activities.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddRoom.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminHeader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApproveRoom.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApproveRoomPrice.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bookings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigureRooms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactUs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dining.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditProfile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManagerHeader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meetings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PackagesAndOffers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RoomsAndSuites.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchRoom.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchRoomForApproval.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchRoomResults.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchRoomResultsForApproval.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SetDates.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SetRoomFeatures.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SetRoomPicture.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SetRoomPrice.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignIn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignUp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserHeader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/Adventure.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/Awards.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/Carousel/CarouselImage1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/Carousel/CarouselImage2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/Carousel/CarouselImage3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/Carousel/CarouselImage4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/Carousel/CarouselImage5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/Carousel/CarouselImage6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/CodeItResortAndSpa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/CodeItResortAndSpaFavicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/FullWidth/ContactUs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/FullWidth/Dining.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/FullWidth/Error.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/FullWidth/PackagesAndOffers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/FullWidth/RoomsAndSuites.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/FloridaResidentRate.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/Guestrooms.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/HoneymoonInParadise.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/HotTinRoofRestaurant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/Liquid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/LiquidParadise.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/NobleAdventures.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/PentHouse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/ReturnToParadisePackage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/SuiteSavingsInParadise.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/Suites.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/LearnMore/SunsetPier.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/ProfilePictures/Default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/ProfilePictures/SignInAndSignUp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/ProfilePictures/Softec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/img/SignInAndSignUp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/nav.auto.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/property.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-ui-1.8.16.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/modernizr-1.7.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/slick.min.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,11 +87,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SignIn.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SignIn.php">
+      <file leaf-file-name="ApproveRoom.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/ApproveRoom.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="221">
+              <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -202,16 +265,15 @@
       <workItem from="1523790821176" duration="2181000" />
       <workItem from="1523793522596" duration="11372000" />
       <workItem from="1523807346553" duration="6097000" />
-      <workItem from="1524061792650" duration="388000" />
+      <workItem from="1524061792650" duration="856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20038000" />
+    <option name="totallyTimeSpent" value="20506000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
@@ -516,6 +578,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ApproveRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
         </state>
       </provider>
     </entry>
