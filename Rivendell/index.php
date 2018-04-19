@@ -1,16 +1,16 @@
-<!--<% if(session.getAttribute("Type")==null){ %>
-   <jsp:include page="Header.jsp" />
-<%}else if((Integer)session.getAttribute("Type")==0){%>
-   <jsp:include page="AdminHeader.jsp" />
-<%}else if((Integer)session.getAttribute("Type")==1){%>
-   <jsp:include page="ManagerHeader.jsp" />
-<%}else if((Integer)session.getAttribute("Type")==2){%>
-   <jsp:include page="UserHeader.jsp" />
-<%}else{%>
-   <jsp:include page="Header.jsp" />
-<%}%> -->
+<?php
+session_start();
+if(!isset($_SESSION["UserName"])) {
+    require ('Header.php');
+}
+elseif ($_SESSION(['UserRole'] == 0)) {
+    require_once ('UserHeader.php');
+}
+elseif ($_SESSION(['UserRole'] == 1)) {
+    require_once('AdminHeader.php');
+}
+?>
 
-<?php require ('Header.php') ?>
 <div class="full-width-container">
     <div class="slick-container">
         <div class="slick-slider"></div>

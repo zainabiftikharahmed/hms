@@ -1,12 +1,14 @@
-<!-- <% if(session.getAttribute("Type")==null){ %>
-   <jsp:forward page = "Error.jsp" />
-<%}else if((Integer)session.getAttribute("Type")==0){%>
-   <jsp:include page="AdminHeader.jsp" />
-<%}else{%>
-   <jsp:forward page = "Error.jsp" />
-<%}%> -->
-
-<?php require ('Header.php') ?>
+<?php
+session_start();
+if(!isset($_SESSION["UserName"])) {
+    header("location:Error.php");
+}
+elseif ($_SESSION(['UserRole'] == 1)) {
+    require_once ('AdminHeader.php');
+}
+else
+    header("location:Error.php");
+?>
 
 <section id="main">
     <div class="full-width-container">
@@ -14,7 +16,7 @@
             <div class="hover-fade"></div>
             <div class="blurimage"><img src="css/img/SignInAndSignUp.jpg" alt="" /></div>
             <div class="content-wrap">
-                <form action="AddRoom" method="post">
+                <form action="../Controllers/Admin/Room.php" method="post">
                     <div style="top:10%;" class="login-form">
                         <h1>Add Room</h1><br>
                         <div class="form-group ">
@@ -34,7 +36,7 @@
                             <input type="number" name="Price" class="form-control" placeholder="Price" id="Price">
                             <i class="fa fa-money"></i>
                         </div>
-                        <button type="submit" class="log-btn" >Add Room</button>
+                        <button type="submit" class="log-btn" name="AddRoom" >Add Room</button>
                     </div>
                 </form>
             </div>

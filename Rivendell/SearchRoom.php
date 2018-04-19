@@ -1,22 +1,24 @@
-<!--<% if(session.getAttribute("Type")==null){ %>
-   <jsp:forward page = "Error.jsp" />
-<%}else if((Integer)session.getAttribute("Type")==0){%>
-   <jsp:include page="AdminHeader.jsp" />
-<%}else if((Integer)session.getAttribute("Type")==1){%>
-   <jsp:include page="ManagerHeader.jsp" />
-<%}else if((Integer)session.getAttribute("Type")==2){%>
-   <jsp:include page="UserHeader.jsp" />
-<%}else{%>
-   <jsp:forward page = "Error.jsp" />
-<%}%>-->
-<?php require ('Header.php') ?>
+<?php
+session_start();
+if(!isset($_SESSION["UserName"])) {
+    header("location:Error.php");
+}
+elseif ($_SESSION(['UserRole'] == 0)) {
+    require_once ('UserHeader.php');
+}
+elseif ($_SESSION(['UserRole'] == 1)) {
+    require_once('AdminHeader.php');
+}
+?>
+
+
 <section id="main">
     <div class="full-width-container">
         <div class="full-image-hover">
             <div class="hover-fade"></div>
             <div class="blurimage"><img src="css/img/SignInAndSignUp.jpg" alt="" /></div>
             <div class="content-wrap">
-                <form action="SearchRoom" method="post" >
+                <form action="../Controllers/User/Room.php" method="post" >
                     <div style="top: 25%" class="login-form" >
                         <h1>SEARCH ROOM</h1><br>
                         <div class="form-group ">
@@ -28,7 +30,7 @@
                             </select>
                             <i class="fa fa-search"></i>
                         </div>
-                        <button type="submit" class="log-btn" >Search</button>
+                        <button type="submit" class="log-btn" name="SearchRoom">Search</button>
                     </div>
                 </form>
             </div>

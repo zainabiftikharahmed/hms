@@ -1,11 +1,15 @@
-<!-- <% if(session.getAttribute("Type")==null){ %>
-   <jsp:forward page = "Error.jsp" />
-<%}else if((Integer)session.getAttribute("Type")==0){%>
-   <jsp:include page="AdminHeader.jsp" />
-<%}else{%>
-   <jsp:forward page = "Error.jsp" />
-<%}%> -->
-<?php require ('Header.php') ?>
+<?php
+session_start();
+if(!isset($_SESSION["UserName"])) {
+    header("location:Error.php");
+}
+elseif ($_SESSION(['UserRole'] == 1)) {
+    require_once ('AdminHeader.php');
+}
+else
+    header("location:Error.php");
+?>
+
 <section id="main">
     <div class="full-width-container">
         <div class="full-image-hover">
@@ -16,13 +20,13 @@
                     <div style="top:20%;" class="login-form">
                         <h1>Configure Rooms</h1><br>
                         <div class="form-group ">
-                            <button type="submit" class="log-btn" style="color: white" onClick="form.action='SetRoomPrice.jsp'">Set Room Price</button>
+                            <button type="submit" class="log-btn" style="color: white" onClick="form.action='SetRoomPrice.php'">Set Room Price</button>
                         </div>
                         <div class="form-group ">
-                            <button type="submit" class="log-btn" style="color: white" onClick="form.action='SetRoomFeatures.jsp'">Set Room Features</a></button>
+                            <button type="submit" class="log-btn" style="color: white" onClick="form.action='SetRoomFeatures.php'">Set Room Features</a></button>
                         </div>
                         <div class="form-group ">
-                            <button type="submit" class="log-btn" style="color: white" onClick="form.action='SetRoomPicture.jsp'">Set Room Picture</a></button>
+                            <button type="submit" class="log-btn" style="color: white" onClick="form.action='SetRoomPicture.php'">Set Room Picture</a></button>
                         </div>
                     </div>
                 </form>
