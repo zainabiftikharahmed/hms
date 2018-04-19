@@ -1,81 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f16eaa-8a67-4776-b5f0-2b48c2191812" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Controllers/Admin/Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Activities.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/AddRoom.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/AdminHeader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ApproveRoom.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ApproveRoomPrice.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Bookings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ConfigureRooms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ContactUs.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Dining.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/EditProfile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Error.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ManagerHeader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Meetings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/PackagesAndOffers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Profile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/RoomsAndSuites.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/SearchRoom.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/SearchRoomForApproval.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/SearchRoomResults.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/SearchRoomResultsForApproval.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/SetDates.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/SetRoomFeatures.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/SetRoomPicture.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/SetRoomPrice.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/SignIn.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/SignUp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Spa.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/UserHeader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/Adventure.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/Awards.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/Carousel/CarouselImage1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/Carousel/CarouselImage2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/Carousel/CarouselImage3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/Carousel/CarouselImage4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/Carousel/CarouselImage5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/Carousel/CarouselImage6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/CodeItResortAndSpa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/CodeItResortAndSpaFavicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/FullWidth/ContactUs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/FullWidth/Dining.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/FullWidth/Error.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/FullWidth/PackagesAndOffers.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/FullWidth/RoomsAndSuites.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/FloridaResidentRate.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/Guestrooms.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/HoneymoonInParadise.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/HotTinRoofRestaurant.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/Liquid.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/LiquidParadise.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/NobleAdventures.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/PentHouse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/ReturnToParadisePackage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/SuiteSavingsInParadise.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/Suites.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/LearnMore/SunsetPier.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/ProfilePictures/Default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/ProfilePictures/SignInAndSignUp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/ProfilePictures/Softec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/img/SignInAndSignUp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/nav.auto.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/property.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/js/Custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/js/jquery-ui-1.8.16.custom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/js/modernizr-1.7.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/js/slick.min.js" beforeDir="false" />
-    </list>
+    <list default="true" id="31f16eaa-8a67-4776-b5f0-2b48c2191812" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,26 +13,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/User/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Room.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controllers/User/Room.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -190,7 +97,7 @@
     <packageJsonPaths />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="24" />
     <option name="y" value="72" />
     <option name="width" value="1346" />
@@ -211,22 +118,6 @@
             <path>
               <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cloud" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cloud" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cloud" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="User" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cloud" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Rivendell" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -299,16 +190,15 @@
       <workItem from="1523793522596" duration="11372000" />
       <workItem from="1523807346553" duration="6097000" />
       <workItem from="1524061792650" duration="9031000" />
-      <workItem from="1524132937073" duration="1558000" />
+      <workItem from="1524132937073" duration="1903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30239000" />
+    <option name="totallyTimeSpent" value="30584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
@@ -342,8 +232,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SetRoomPicture.php" />
-    <entry file="file://$PROJECT_DIR$/SetRoomPrice.php" />
     <entry file="file://$PROJECT_DIR$/ConfigureRooms.php" />
     <entry file="file://$PROJECT_DIR$/SearchRoom.php" />
     <entry file="file://$PROJECT_DIR$/ApproveRoom.php" />
@@ -412,24 +300,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/Admin/Room.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/Admin/Comments.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/Admin/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -550,6 +424,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/User/Room.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/User/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -557,10 +438,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/User/Room.php">
+    <entry file="file://$PROJECT_DIR$/Rivendell/SetRoomFeatures.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/SetRoomPicture.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/Admin/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="17">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/Admin/Room.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

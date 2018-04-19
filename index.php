@@ -6,5 +6,5 @@
  * Time: 7:52 PM
  */
 /* Redirect browser */
-header("Location: views/index.php");
+header("Location: Rivendell/index.php");
 exit; ?>
