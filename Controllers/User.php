@@ -86,16 +86,12 @@ if(isset($_POST['SignIn'])) {
     }
 }
 
-
-
 //Edit Profile Method
 
 if(isset($_POST['EditProfile'])){
 
 
 }
-
-
 if( isset($_POST['DeleteUser'])){
 
 

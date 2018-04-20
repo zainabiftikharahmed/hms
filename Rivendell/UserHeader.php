@@ -43,7 +43,7 @@
                         <ul>
                             <li><a href="ContactUs.php">CONTACT US </a></li>
                             <li><a href="Profile.php">Profile</a></li>
-                            <li><a href="LogOut">LogOut</a></li>
+                            <li><a href="LogOut.php">LogOut</a></li>
                             <li class="booking"><a href="SearchRoom.php">BOOK  NOW</a></li>
                         </ul> 
                     </div>

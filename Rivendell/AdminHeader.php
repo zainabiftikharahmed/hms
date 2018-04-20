@@ -31,7 +31,7 @@
                             <li><a href="AddRoom.php">ADD ROOM</a></li>
                             <li><a href="ConfigureRooms.php">CONFIGURE ROOM</a></li>
                             <li><a href="Profile.php">Profile</a></li>
-                            <li class="booking"><a href="LogOut">LogOut</a></li>
+                            <li class="booking"><a href="LogOut.php">LogOut</a></li>
                         </ul> 
                     </div>
                 </div>

@@ -1,14 +1,13 @@
 <?php
 session_start();
-if(!isset($_SESSION["UserName"])) {
-    require ('Header.php');
+if (isset($_SESSION["Email"])){
+    if ($_SESSION["Role"] == 1)
+        require ("AdminHeader.php");
+    else
+        require ("UserHeader.php");
 }
-elseif ($_SESSION(['UserRole'] == 0)) {
-    require_once ('UserHeader.php');
-}
-elseif ($_SESSION(['UserRole'] == 1)) {
-    require_once('AdminHeader.php');
-}
+else
+    require ("Header.php");
 ?>
 
 
