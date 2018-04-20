@@ -3,7 +3,7 @@
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Code-It Resort & Spa</title>
+    <title>Rivendell-Beds & Breakfast</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/property.css" />
     <link rel="stylesheet" href="css/nav.auto.css" />

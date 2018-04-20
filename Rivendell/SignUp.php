@@ -1,9 +1,10 @@
 <?php
-if(!isset($_SESSION["UserName"])) {
-    require_once ('Header.php');
+session_start();
+if(isset($_SESSION["Email"])) {
+    header("location:Error.php");
 }
 else
-    header("location:Error.php");
+    require ('Header.php');
 ?>
 
 <section id="main">
