@@ -19,8 +19,7 @@ if(isset($_POST['SignUp'])) {
     $password = $_POST['UserPassword'];
     $profilepicture = 'Null';
 
-    $item = $marshaler->marshalJson('
-        {
+    $item = $marshaler->marshalJson('{
             "Name": "' . $name . '",
             "Contact": "' . $contact . '",
             "Email": "' . $email . '",
@@ -42,6 +41,8 @@ if(isset($_POST['SignUp'])) {
         header("location:../Rivendell/Error.php");
     }
 }
+
+
 
 
 
@@ -86,12 +87,53 @@ if(isset($_POST['SignIn'])) {
     }
 }
 
+
+
+
+
 //Edit Profile Method
+if( isset($_POST['EditProfile'])) {
+    session_start();
+    $email = $_SESSION["Email"];
+    $contact = $_POST['UserContact'];
+    $password = $_POST['UserPassword'];
+    $profilepicture = 'Null';
 
-if(isset($_POST['EditProfile'])){
+    $key = $marshaler->marshalJson('
+        {   
+            "Email": "' . $email . '"
+        }
+        ');
 
+    $eav = $marshaler->marshalJson('
+    {
+        ":c": "' . $contact . '",
+        ":p": "' . $password . '",
+        ":pic": "' . $profilepicture . '"
+    }
+    ');
 
+    $params = [
+        'TableName' => $tableName,
+        'Key' => $key,
+        'UpdateExpression' =>
+            'set Contact = :c, Password = :p, PictureName = :pic',
+        'ExpressionAttributeValues' => $eav,
+        "ReturnValues" => 'ALL_NEW'
+    ];
+    try {
+        $result = $dynamodb->updateItem($params);
+        $_SESSION["Contact"] = $contact;
+        $_SESSION["Password"] = $password;
+        header("location:../Rivendell/Profile.php");
+
+    } catch (DynamoDbException $e) {
+        header("location:../Rivendell/Error.php");
+    }
 }
+
+
+
 if( isset($_POST['DeleteUser'])){
 
 

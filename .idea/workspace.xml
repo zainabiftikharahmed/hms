@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f16eaa-8a67-4776-b5f0-2b48c2191812" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Rivendell/LogOut.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/AdminHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/AdminHeader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/Error.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/Error.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/UserHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/UserHeader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rivendell/EditProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/EditProfile.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,11 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Error.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Rivendell/Error.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Controllers/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            <state relative-caret-position="412">
+              <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+              <folding>
+                <element signature="e#156#938#0#PHP" />
+                <element signature="e#958#2217#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Marshaler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer/vendor/aws/aws-sdk-php/src/DynamoDb/Marshaler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="321" selection-start-line="321" selection-end-line="321" />
             </state>
           </provider>
         </entry>
@@ -34,8 +43,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Rivendell/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="10" selection-end-column="2" />
+            <state relative-caret-position="34">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -51,6 +60,7 @@
       <find>4035</find>
       <find>Credentials</find>
       <find>credentials</find>
+      <find>session</find>
     </findStrings>
     <replaceStrings>
       <replace>php</replace>
@@ -88,7 +98,6 @@
         <option value="$PROJECT_DIR$/Controllers/Admin/Room.php" />
         <option value="$PROJECT_DIR$/Rivendell/Meetings.php" />
         <option value="$PROJECT_DIR$/Rivendell/PackagesAndOffers.php" />
-        <option value="$PROJECT_DIR$/Rivendell/EditProfile.php" />
         <option value="$PROJECT_DIR$/Rivendell/Spa.php" />
         <option value="$PROJECT_DIR$/Rivendell/RoomsAndSuites.php" />
         <option value="$PROJECT_DIR$/Rivendell/SearchRoomResults.php" />
@@ -108,11 +117,12 @@
         <option value="$PROJECT_DIR$/Rivendell/SignUp.php" />
         <option value="$PROJECT_DIR$/Rivendell/SignIn.php" />
         <option value="$PROJECT_DIR$/Rivendell/Profile.php" />
-        <option value="$PROJECT_DIR$/Controllers/User.php" />
         <option value="$PROJECT_DIR$/Rivendell/UserHeader.php" />
         <option value="$PROJECT_DIR$/Rivendell/AdminHeader.php" />
         <option value="$PROJECT_DIR$/Rivendell/LogOut.php" />
         <option value="$PROJECT_DIR$/Rivendell/Error.php" />
+        <option value="$PROJECT_DIR$/Rivendell/EditProfile.php" />
+        <option value="$PROJECT_DIR$/Controllers/User.php" />
       </list>
     </option>
   </component>
@@ -147,6 +157,11 @@
             <path>
               <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cloud" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -188,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.temp.php">
+  <component name="RunManager" selected="PHP Script.User.php">
     <configuration name="ah.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Cloud/ah.html" />
     <configuration name="User.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Controllers/User.php" />
     <configuration name="config.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/config.php" />
@@ -203,8 +218,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.temp.php" />
         <item itemvalue="PHP Script.User.php" />
+        <item itemvalue="PHP Script.temp.php" />
         <item itemvalue="PHP Script.config.php" />
         <item itemvalue="PHP Script.index.php" />
         <item itemvalue="JavaScript Debug.ah.html" />
@@ -228,12 +243,12 @@
       <workItem from="1524132937073" duration="2156000" />
       <workItem from="1524222415828" duration="19405000" />
       <workItem from="1524247705483" duration="1860000" />
-      <workItem from="1524249678189" duration="1759000" />
+      <workItem from="1524249678189" duration="6354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53861000" />
+    <option name="totallyTimeSpent" value="58456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -241,12 +256,12 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" visible="true" weight="0.03497615" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.5119237" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.03497615" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.17329094" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49853587" weight="0.2845787" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24304539" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24304539" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -294,11 +309,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SignUp.php" />
     <entry file="file://$PROJECT_DIR$/Spa.php" />
     <entry file="file://$PROJECT_DIR$/UserHeader.php" />
     <entry file="file://$PROJECT_DIR$/SignIn.php" />
@@ -417,13 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/EditProfile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rivendell/PackagesAndOffers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -466,44 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/AdminHeader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/UserHeader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="51" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="e#156#938#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rivendell/LogOut.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -518,17 +487,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rivendell/Error.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-526">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/AdminHeader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/UserHeader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="86" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/EditProfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="39" column="161" selection-start-line="39" selection-start-column="161" selection-end-line="39" selection-end-column="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer/vendor/aws/aws-sdk-php/src/DynamoDb/Marshaler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="321" selection-start-line="321" selection-end-line="321" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+          <folding>
+            <element signature="e#156#938#0#PHP" />
+            <element signature="e#958#2217#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
