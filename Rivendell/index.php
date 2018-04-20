@@ -4,7 +4,7 @@ if(!isset($_SESSION["UserName"])) {
     require ('Header.php');
 }
 else {
-    if ($_SESSION(['UserRole'] == 0)) {
+    if ($_SESSION(["UserRole"] == 0)) {
         require('UserHeader.php');
     } else
         require('AdminHeader.php');

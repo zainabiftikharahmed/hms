@@ -69,13 +69,13 @@ if(isset($_POST['SignIn'])) {
                 $_SESSION["UserRole"] = 1;
                 header("location:../Rivendell/index.php");
             } else {
-               // session_start();
-               // $_SESSION["UserEmail"] = $email ;
-               // $_SESSION["UserName"] = $result["Item"]["Name"]["S"] ;
-               // $_SESSION["UserContact"] = $result["Item"]["Contact"]["S"] ;
-               // $_SESSION["UserPassword"] = $result["Item"]["Password"]["S"] ;
-               // $_SESSION["UserRole"] = 0;
-               // header("location:../Rivendell/Profile.php");
+                session_start();
+                $_SESSION["UserEmail"] = $email ;
+                $_SESSION["UserName"] = $result["Item"]["Name"]["S"] ;
+                $_SESSION["UserContact"] = $result["Item"]["Contact"]["S"] ;
+                $_SESSION["UserPassword"] = $result["Item"]["Password"]["S"] ;
+                $_SESSION["UserRole"] = 0;
+                header("location:../Rivendell/Profile.php");
             }
         }
         else
