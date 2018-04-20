@@ -18,7 +18,7 @@ elseif ($_SESSION(['UserRole'] == 1)) {
             <div class="hover-fade"></div>
             <div class="blurimage"><img src="css/img/SignInAndSignUp.jpg" alt="" /></div>
             <div class="content-wrap">
-                <form action="../Controllers/User/Room.php" method="post" >
+                <form action="../Controllers/Room.php" method="post" >
                     <div style="top: 25%" class="login-form" >
                         <h1>SEARCH ROOM</h1><br>
                         <div class="form-group ">

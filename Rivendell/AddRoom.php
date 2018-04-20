@@ -16,7 +16,7 @@ else
             <div class="hover-fade"></div>
             <div class="blurimage"><img src="css/img/SignInAndSignUp.jpg" alt="" /></div>
             <div class="content-wrap">
-                <form action="../Controllers/Admin/Room.php" method="post">
+                <form action="../Controllers/Room.php" method="post">
                     <div style="top:10%;" class="login-form">
                         <h1>Add Room</h1><br>
                         <div class="form-group ">

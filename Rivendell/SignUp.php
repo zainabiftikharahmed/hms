@@ -13,7 +13,7 @@ else
             <div class="hover-fade"></div>
             <div class="blurimage"><img src="css/img/SignInAndSignUp.jpg" alt="" /></div>
             <div class="content-wrap">
-                <form action="../Controllers/User/User.php" method="post">
+                <form action="../Controllers/User.php" method="post">
                     <div class="login-form">
                         <h1>Sign Up</h1><br>
                         <div class="form-group ">
