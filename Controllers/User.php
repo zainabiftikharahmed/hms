@@ -7,6 +7,7 @@
  */
 
 require ("../config.php");
+
 $tableName = 'User';
 
 
@@ -123,8 +124,6 @@ if( isset($_POST['EditProfile'])) {
     ];
     try {
         $result = $dynamodb->updateItem($params);
-        $_SESSION["Contact"] = $contact;
-        $_SESSION["Password"] = $password;
         header("location:../Rivendell/Profile.php");
 
     } catch (DynamoDbException $e) {
@@ -134,6 +133,8 @@ if( isset($_POST['EditProfile'])) {
 
 
 
+
+//Delete User  Method
 if( isset($_POST['DeleteUser'])){
 
 

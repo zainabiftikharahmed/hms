@@ -1,13 +1,14 @@
-<!--<% if(session.getAttribute("Type")==null){ %>
-   <jsp:forward page = "Error.jsp" />
-<%}else if((Integer)session.getAttribute("Type")==0){%>
-   <jsp:include page="AdminHeader.jsp" />
-<%}else if((Integer)session.getAttribute("Type")==1){%>
-   <jsp:include page="ManagerHeader.jsp" />
-<%}else{%>
-   <jsp:forward page = "Error.jsp" />
-<%}%>-->
-<?php require ('Header.php') ?>
+<?php
+session_start();
+if (isset($_SESSION["Email"])){
+    if ($_SESSION["Role"] == 1)
+        require ("AdminHeader.php");
+    else
+        header("location:Error.php");
+}
+else
+    header("location:Error.php");
+?>
     <section id="main">
         <div class="full-width-container">
             <div class="full-image-hover">
@@ -32,4 +33,4 @@
             </div>
         </div>
     </section>
-<?php require ('Header.php') ?>
+<?php require ('Footer.php') ?>

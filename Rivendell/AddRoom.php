@@ -1,10 +1,10 @@
 <?php
 session_start();
-if(!isset($_SESSION["UserName"])) {
-    header("location:Error.php");
-}
-elseif ($_SESSION(['UserRole'] == 1)) {
-    require_once ('AdminHeader.php');
+if (isset($_SESSION["Email"])){
+    if ($_SESSION["Role"] == 1)
+        require ("AdminHeader.php");
+    else
+        header("location:Error.php");
 }
 else
     header("location:Error.php");
