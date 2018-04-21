@@ -13,7 +13,6 @@ date_default_timezone_set('UTC');
 use Aws\DynamoDb\Exception\DynamoDbException;
 use Aws\DynamoDb\Marshaler;
 
-
 $sdk = new Aws\Sdk([
     'region'   => 'us-west-2',
     'version'  => 'latest',
@@ -25,4 +24,6 @@ $sdk = new Aws\Sdk([
 
 $dynamodb = $sdk->createDynamoDb();
 $marshaler = new Marshaler();
+$s3 = $sdk->createS3();
+
 ?>

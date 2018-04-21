@@ -18,12 +18,6 @@ else
                     <form action="../Controllers/User.php" method="post">
                         <div style="top:10%;" class="login-form">
                             <h1>Edit Profile</h1><br>
-                            <div class="form-group ">
-                                <div class="fileUpload btn btn-primary">
-                                    <button type="button" class="log-btn" >Upload Picture</button>
-                                    <input type="file" name="ProfilePicture" placeholder="Picture" id="Picture" class="upload"/>
-                                </div>
-                            </div>
                             <div class="form-group " >
                                 <input type="text" name="UserName" class="form-control" placeholder="Name" id="Name" value=<?php echo $_SESSION["Name"]?>>
                                 <i class="fa fa-user"></i>

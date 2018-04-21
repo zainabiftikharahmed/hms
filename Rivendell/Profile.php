@@ -19,9 +19,6 @@ else
                     <div style="top:1%;" class="login-form" >
                         <h1>Profile</h1><br>
                         <div class="form-group ">
-                            <img src="css/img/ProfilePictures/<%= session.getAttribute" onerror="this.src='css/img/ProfilePictures/Default.png'" style="width:335px; height:128px; padding:5px 5px 5px 5px;" class="form-control" >
-                        </div>
-                        <div class="form-group ">
                             <input type="text" class="form-control" value=<?php echo $_SESSION["Name"]?>  readonly>
                             <i class="fa fa-user"></i>
                         </div>

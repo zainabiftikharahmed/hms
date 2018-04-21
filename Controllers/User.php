@@ -76,7 +76,9 @@ if(isset($_POST['SignIn'])) {
                 $_SESSION["Name"] = $result["Item"]["Name"]["S"] ;
                 $_SESSION["Contact"] = $result["Item"]["Contact"]["S"] ;
                 $_SESSION["Password"] = $result["Item"]["Password"]["S"] ;
+                $_SESSION["Profile"] = $result["Item"]["PictureName"]["S"];
                 $_SESSION["Role"] = 0;
+
                 header("location:../Rivendell/Profile.php");
             }
         }
@@ -98,7 +100,6 @@ if( isset($_POST['EditProfile'])) {
     $email = $_SESSION["Email"];
     $contact = $_POST['UserContact'];
     $password = $_POST['UserPassword'];
-    $profilepicture = 'Null';
 
     $key = $marshaler->marshalJson('
         {   
@@ -109,8 +110,7 @@ if( isset($_POST['EditProfile'])) {
     $eav = $marshaler->marshalJson('
     {
         ":c": "' . $contact . '",
-        ":p": "' . $password . '",
-        ":pic": "' . $profilepicture . '"
+        ":p": "' . $password . '"
     }
     ');
 
@@ -118,18 +118,78 @@ if( isset($_POST['EditProfile'])) {
         'TableName' => $tableName,
         'Key' => $key,
         'UpdateExpression' =>
-            'set Contact = :c, Password = :p, PictureName = :pic',
+            'set Contact = :c, Password = :p',
         'ExpressionAttributeValues' => $eav,
         "ReturnValues" => 'ALL_NEW'
     ];
     try {
         $result = $dynamodb->updateItem($params);
+        $_SESSION["Contact"] = $result["Item"]["Contact"]["S"] ;
+        $_SESSION["Password"] = $result["Item"]["Password"]["S"] ;
         header("location:../Rivendell/Profile.php");
 
     } catch (DynamoDbException $e) {
         header("location:../Rivendell/Error.php");
     }
 }
+
+
+
+
+
+//Edit Profile Picture
+if( isset($_POST['EditProfilePicture'])) {
+    session_start();
+    $bucket = 'hotelfamily01';
+    $file_Path = 'C:\Users\Acer\Desktop\Leeteuk.jpg';
+    $key = $_SESSION["Email"];
+
+    try {
+        $result = $s3->putObject([
+            'Bucket' => $bucket,
+            'Key' => $key,
+            'SourceFile' => $file_Path,
+        ]);
+    } catch (S3Exception $e) {
+        echo $e->getMessage() . "\n";
+    }
+
+    try{
+        $url = $s3->getObjectUrl($bucket, $key);
+        $key = $marshaler->marshalJson('
+        {   
+            "Email": "' . $_SESSION["Email"] . '"
+        }
+        ');
+
+        $eav = $marshaler->marshalJson('
+            {
+            ":p": "' . $url . '"
+            }
+            ');
+
+        $params = [
+            'TableName' => $tableName,
+            'Key' => $key,
+            'UpdateExpression' =>
+                'set PictureName = :p',
+            'ExpressionAttributeValues' => $eav,
+            "ReturnValues" => 'ALL_NEW'
+        ];
+        try {
+            $result = $dynamodb->updateItem($params);
+            $_SESSION["Profile"] = $url ;
+            header("location:../Rivendell/ProfilePicture.php");
+
+        } catch (DynamoDbException $e) {
+            header("location:../Rivendell/Error.php");
+        }
+
+    } catch (S3Exception $e) {
+        echo $e->getMessage() . "\n";
+    }
+}
+
 
 
 
