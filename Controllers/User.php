@@ -7,7 +7,6 @@
  */
 
 require ("../config.php");
-
 $tableName = 'User';
 
 
@@ -42,9 +41,6 @@ if(isset($_POST['SignUp'])) {
         header("location:../Rivendell/Error.php");
     }
 }
-
-
-
 
 
 //Log In Method
@@ -91,9 +87,6 @@ if(isset($_POST['SignIn'])) {
 }
 
 
-
-
-
 //Edit Profile Method
 if( isset($_POST['EditProfile'])) {
     session_start();
@@ -132,9 +125,6 @@ if( isset($_POST['EditProfile'])) {
         header("location:../Rivendell/Error.php");
     }
 }
-
-
-
 
 
 //Edit Profile Picture
@@ -189,9 +179,6 @@ if( isset($_POST['EditProfilePicture'])) {
         echo $e->getMessage() . "\n";
     }
 }
-
-
-
 
 
 //Delete User  Method
