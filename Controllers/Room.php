@@ -6,9 +6,12 @@
  * Time: 11:45 PM
  */
 
-require ("../config.php");
-$tableName = 'Room';
 
+use Aws\DynamoDb\Exception\DynamoDbException;
+require ("../config.php");
+
+
+$tableName = 'Room';
 
 //Add a room
 if(isset($_POST['AddRoom'])) {
@@ -36,13 +39,13 @@ if(isset($_POST['AddRoom'])) {
     } catch (DynamoDbException $e) {
         header("location:../Rivendell/Error.php");
     }
-
 }
 
 
 //Add features to a room
 if(isset($_POST['SetFeatures'])){
     $room = $_POST['RoomNumber'];
+
     $key = $marshaler->marshalJson('
         {   
             "Number": ' . $room . '
@@ -62,18 +65,22 @@ if(isset($_POST['SetFeatures'])){
         switch ($checked_count) {
             case 1:
                 $eav = $marshaler->marshalJson('{
+                ":r": ' . $room . ',
                 ":f": [ "' . $features[0] . '"]}');
                 break;
             case 2:
                 $eav = $marshaler->marshalJson('{
+                ":r": ' . $room . ',
                 ":f": [ "' . $features[0] . '" , "' . $features[1] . '"]}');
                 break;
             case 3:
                 $eav = $marshaler->marshalJson('{
+                ":r": ' . $room . ',
                 ":f": [ "' . $features[0] . '" , "' . $features[1] . '", "' . $features[2] . '"]}');
                 break;
             case 4:
                 $eav = $marshaler->marshalJson('{
+                ":r": ' . $room . ',
                 ":f": [ "' . $features[0] . '" , "' . $features[1] . '", "' . $features[2] . '", "' . $features[3] . '"]}');
                 break;
         }
@@ -81,17 +88,19 @@ if(isset($_POST['SetFeatures'])){
         $params = [
             'TableName' => $tableName,
             'Key' => $key,
-            'UpdateExpression' =>
-                'set Features = :f',
+            'UpdateExpression' => 'set Features = :f',
+            'ConditionExpression' => '#roomNumber = :r',
+            'ExpressionAttributeNames' => ['#roomNumber' => 'Number'],
             'ExpressionAttributeValues' => $eav,
-            "ReturnValues" => 'ALL_NEW'
+            'ReturnValues' => 'UPDATED_NEW'
         ];
+
         try {
             $result = $dynamodb->updateItem($params);
             header("location:../Rivendell/index.php");
 
         } catch (DynamoDbException $e) {
-            header("location:../Rivendell/Error.php");
+            echo ("$e");
         }
     }
 }

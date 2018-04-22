@@ -9,9 +9,9 @@ require 'composer/vendor/autoload.php';
 
 
 date_default_timezone_set('UTC');
-
 use Aws\DynamoDb\Exception\DynamoDbException;
 use Aws\DynamoDb\Marshaler;
+require ("../composer/vendor/aws/aws-sdk-php/src/DynamoDb/Exception/DynamoDbException.php");
 
 $sdk = new Aws\Sdk([
     'region'   => 'us-west-2',
