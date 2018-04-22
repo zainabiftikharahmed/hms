@@ -19,11 +19,11 @@ else
                         <div style="top:10%;" class="login-form">
                             <h1>Room Price</h1><br>
                             <div class="form-group " >
-                                <input type="number" name="RoomNumber" class="form-control" placeholder="Room ID" id="RoomID">
+                                <input type="number" name="RoomNumber" class="form-control" placeholder="Room ID" id="RoomID" required>
                                 <i class="fa fa-home"></i>
                             </div>
                             <div class="form-group ">
-                                <input type="number" name="RoomPrice" class="form-control" placeholder="New Price" id="Price">
+                                <input type="number" name="RoomPrice" class="form-control" placeholder="New Price" id="Price" required>
                                 <i class="fa fa-money"></i>
                             </div>
                             <button type="submit" name="SetRoomPrice" class="log-btn" >Set Price</button>

@@ -6,7 +6,11 @@
  * Time: 7:57 PM
  */
 
+
+use Aws\DynamoDb\Exception\DynamoDbException;
 require ("../config.php");
+
+
 $tableName = 'User';
 
 
@@ -90,8 +94,9 @@ if(isset($_POST['SignIn'])) {
 //Edit Profile Method
 if( isset($_POST['EditProfile'])) {
     session_start();
-    $email = $_SESSION["Email"];
+    $name = $_POST['UserName'];
     $contact = $_POST['UserContact'];
+    $email = $_POST['UserEmail'];
     $password = $_POST['UserPassword'];
 
     $key = $marshaler->marshalJson('
@@ -103,6 +108,8 @@ if( isset($_POST['EditProfile'])) {
     $eav = $marshaler->marshalJson('
     {
         ":c": "' . $contact . '",
+        ":n": "' . $name . '",
+        ":e": "' . $email . '",
         ":p": "' . $password . '"
     }
     ');
@@ -111,12 +118,15 @@ if( isset($_POST['EditProfile'])) {
         'TableName' => $tableName,
         'Key' => $key,
         'UpdateExpression' =>
-            'set Contact = :c, Password = :p',
+            'set Contact = :c, Password = :p, #personName = :n',
+        'ConditionExpression' => 'Email = :e',
+        'ExpressionAttributeNames' => ['#personName' => 'Name'],
         'ExpressionAttributeValues' => $eav,
         "ReturnValues" => 'ALL_NEW'
     ];
     try {
         $result = $dynamodb->updateItem($params);
+        $_SESSION["Name"] = $result["Item"]["Name"]["S"] ;
         $_SESSION["Contact"] = $result["Item"]["Contact"]["S"] ;
         $_SESSION["Password"] = $result["Item"]["Password"]["S"] ;
         header("location:../Rivendell/Profile.php");
@@ -154,6 +164,7 @@ if( isset($_POST['EditProfilePicture'])) {
 
         $eav = $marshaler->marshalJson('
             {
+            ":e": "' . $email . '",
             ":p": "' . $url . '"
             }
             ');
@@ -163,6 +174,7 @@ if( isset($_POST['EditProfilePicture'])) {
             'Key' => $key,
             'UpdateExpression' =>
                 'set PictureName = :p',
+            'ConditionExpression' => 'Email = :e',
             'ExpressionAttributeValues' => $eav,
             "ReturnValues" => 'ALL_NEW'
         ];

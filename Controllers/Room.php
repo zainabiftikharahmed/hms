@@ -119,6 +119,7 @@ if(isset($_POST['SetRoomPrice'])) {
 
     $eav = $marshaler->marshalJson('
     {
+        ":r": ' . $room . ',
         ":p": ' . $price . '
     }
     ');
@@ -128,8 +129,10 @@ if(isset($_POST['SetRoomPrice'])) {
         'Key' => $key,
         'UpdateExpression' =>
             'set Price = :p',
+        'ConditionExpression' => '#roomNumber = :r',
+        'ExpressionAttributeNames' => ['#roomNumber' => 'Number'],
         'ExpressionAttributeValues' => $eav,
-        "ReturnValues" => 'ALL_NEW'
+        'ReturnValues' => 'UPDATED_NEW'
     ];
     try {
         $result = $dynamodb->updateItem($params);

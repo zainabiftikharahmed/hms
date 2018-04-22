@@ -20,7 +20,7 @@ else
                     <div style="top:3%;" class="login-form">
                         <h1>Room Features</h1><br>
                         <div class="form-group " >
-                            <input type="number" name="RoomNumber" class="form-control" placeholder="Room ID" id="RoomID">
+                            <input type="number" name="RoomNumber" class="form-control" placeholder="Room ID" id="RoomID" required>
                             <i class="fa fa-number"></i>
                         </div>
                         <div class="form-group " >

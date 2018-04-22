@@ -18,11 +18,11 @@ else
                 <div class="login-form">
                     <h1>LOG IN</h1><br>
                     <div class="form-group ">
-                        <input type="email" name="UserEmail" class="form-control" placeholder="Email " id="Email">
+                        <input type="email" name="UserEmail" class="form-control" placeholder="Email " id="Email" required>
                         <i class="fa fa-envelope"></i>
                     </div>
                     <div class="form-group log-status">
-                        <input type="password" name="UserPassword" class="form-control" placeholder="Password" id="Password" >
+                        <input type="password" name="UserPassword" class="form-control" placeholder="Password" id="Password" required>
                         <i class="fa fa-lock"></i>
                     </div>
                     <!--<span class="alert">Invalid Credentials</span>-->
