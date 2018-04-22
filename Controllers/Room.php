@@ -42,49 +42,59 @@ if(isset($_POST['AddRoom'])) {
 
 //Add features to a room
 if(isset($_POST['SetFeatures'])){
-    $room = 1;
-    $features;
-
-    $c = array("Television", "Radio");
-
-    if(!empty($c)) {
-        $checked_count = count($c);
-        $x = 0;
-
-        foreach ($c as $selected) {
-            $features[$x++] = $selected;
-        }
-    }
-
+    $room = $_POST['RoomNumber'];
     $key = $marshaler->marshalJson('
         {   
             "Number": ' . $room . '
         }
         ');
-    $eav = $marshaler->marshalJson('
-    {
-    ":f": [ "' .$features[0]. '" , "' .$features[1]. '"]
 
+    if(!empty($_POST['features'])) {
+        $checked_count = count($_POST['features']);
+        $x = 0;
+
+        foreach ($_POST['features'] as $selected) {
+            $features[$x++] = $selected;
+        }
+
+        $eav;
+
+        switch ($checked_count) {
+            case 1:
+                $eav = $marshaler->marshalJson('{
+                ":f": [ "' . $features[0] . '"]}');
+                break;
+            case 2:
+                $eav = $marshaler->marshalJson('{
+                ":f": [ "' . $features[0] . '" , "' . $features[1] . '"]}');
+                break;
+            case 3:
+                $eav = $marshaler->marshalJson('{
+                ":f": [ "' . $features[0] . '" , "' . $features[1] . '", "' . $features[2] . '"]}');
+                break;
+            case 4:
+                $eav = $marshaler->marshalJson('{
+                ":f": [ "' . $features[0] . '" , "' . $features[1] . '", "' . $features[2] . '", "' . $features[3] . '"]}');
+                break;
+        }
+
+        $params = [
+            'TableName' => $tableName,
+            'Key' => $key,
+            'UpdateExpression' =>
+                'set Features = :f',
+            'ExpressionAttributeValues' => $eav,
+            "ReturnValues" => 'ALL_NEW'
+        ];
+        try {
+            $result = $dynamodb->updateItem($params);
+            header("location:../Rivendell/index.php");
+
+        } catch (DynamoDbException $e) {
+            header("location:../Rivendell/Error.php");
+        }
     }
-    ');
-
-    $params = [
-        'TableName' => $tableName,
-        'Key' => $key,
-        'UpdateExpression' =>
-            'set Features = :f',
-        'ExpressionAttributeValues' => $eav,
-        "ReturnValues" => 'ALL_NEW'
-    ];
-    try {
-        $result = $dynamodb->updateItem($params);
-        header("location:../Rivendell/index.php");
-
-    } catch (DynamoDbException $e) {
-        header("location:../Rivendell/Error.php");
-    }
-
-//}
+}
 
 
 //Add features to a room
