@@ -3,7 +3,7 @@
 <!DOCTYPE>
 <php xmlns="http://www.w3.org/1999/xphp">
 <head>
-    <title>Code-It Resort & Spa</title>
+    <title>Rivendell-Beds & Breakfast</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/property.css">
     <link rel="stylesheet" href="css/nav.auto.css">

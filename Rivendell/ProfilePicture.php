@@ -13,7 +13,7 @@ if (isset($_SESSION["Email"])){
         require ("UserHeader.php");
 }
 else
-    require ("Header.php");
+    header("location:Error.php");
 ?>
 
     <section id="main">
@@ -23,14 +23,14 @@ else
                 <div class="blurimage"><img src="css/img/SignInAndSignUp.jpg" alt="" /></div>
                 <div class="content-wrap">
                     <form action="../Controllers/User.php" method="post">
-                        <div style="top:1%;" class="login-form" >
+                        <div style="top:3%; bottom: 3%" class="login-form" >
                             <img src=<?php echo $_SESSION["Profile"]?>  readonly height="400px" onerror="this.src='css/img/ProfilePictures/Default.png'" >
-                            <h1>Profile Picture</h1><br>
+                            <br><br/>
                         <div>
                             </div>
                         <div class="fileUpload btn btn-primary">
                             <input type="file"  class="btn" placeholder="Picture" name="ProfilePicture" class="upload"/>
-                        </div>
+                        </div><br/>
                         <button type="submit"  name="EditProfilePicture" class="log-btn" name="EditProfile">Save Changes</button>
                     </div>
                     </form>
@@ -39,3 +39,5 @@ else
         </div>
     </section>
 <?php require ('Footer.php') ?>
+
+

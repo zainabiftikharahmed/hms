@@ -7,7 +7,7 @@ if (isset($_SESSION["Email"])){
         require ("UserHeader.php");
 }
 else
-    require ("Header.php");
+    header("location:Error.php");
 ?>
     <section id="main">
         <div class="full-width-container">

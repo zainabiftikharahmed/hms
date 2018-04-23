@@ -1,14 +1,13 @@
 <?php
 session_start();
-if(!isset($_SESSION["UserName"])) {
-    require ('Header.php');
+if (isset($_SESSION["Email"])){
+    if ($_SESSION["Role"] == 1)
+        require ("AdminHeader.php");
+    else
+        require ("UserHeader.php");
 }
-elseif ($_SESSION(['UserRole'] == 0)) {
-    require_once ('UserHeader.php');
-}
-elseif ($_SESSION(['UserRole'] == 1)) {
-    require_once('AdminHeader.php');
-}
+else
+    header("location:Error.php");
 ?>
 
 
@@ -25,9 +24,15 @@ elseif ($_SESSION(['UserRole'] == 1)) {
         <div id="content-wrap">
             <div class="container">
                 <div class="intro col col-2-3">
-                    <h2>Contact Us</h2>
-                    <h1>You can only reach our exclusive Resort by seaplane or boat - Half of the fun is getting here.</h1>
-                    <p>The friendliest private island resort in the world.</p>
+                    <h2>Send Us Your Feedback!</h2>
+                    <form action="../Controllers/Review.php" method="post">
+                        <div class="form-group ">
+                        <textarea type="text" name="ReviewSubmitted" class="form-control" placeholder="Say Something Nice " id="Review" required>
+                        </textarea>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <button type="submit" name="AddReview" class="log-btn">Add Review</button>
+                    </form>
                 </div>
                 <div class="col-wrap">
                     <div class="col ">

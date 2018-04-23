@@ -7,16 +7,15 @@ if (isset($_SESSION["Email"])){
         require ("UserHeader.php");
 }
 else
-    require ("Header.php");
+    header("location:Error.php");
 ?>
-
     <section id="main">
         <div class="full-width-container">
             <div class="full-image-hover">
                 <div class="hover-fade"></div>
                 <div class="blurimage"><img src="css/img/SignInAndSignUp.jpg" alt="" /></div>
                 <div class="content-wrap">
-                    <div style="top:1%;" class="login-form" >
+                    <div style="top:10%;" class="login-form">
                         <h1>Profile</h1><br>
                         <div class="form-group ">
                             <input type="text" class="form-control" value=<?php echo $_SESSION["Name"]?>  readonly>

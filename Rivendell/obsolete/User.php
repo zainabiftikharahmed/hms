@@ -10,31 +10,37 @@
 use Aws\DynamoDb\Exception\DynamoDbException;
 require ("../config.php");
 
+
 $tableName = 'User';
 
 
 //Sign Up Method
 if(isset($_POST['SignUp'])) {
-    //Create item for the user
+
+    $name = $_POST['UserName'];
+    $contact = $_POST['UserContact'];
+    $email = $_POST['UserEmail'];
+    $password = $_POST['UserPassword'];
+    $profilepicture = 'Null';
+
     $item = $marshaler->marshalJson('{
-            "Name": "' . $_POST['UserName'] . '",
-            "Contact": "' . $_POST['UserContact'] . '",
-            "Email": "' . $_POST['UserEmail'] . '",
-            "Password": "' . $_POST['UserPassword'] . '",
-            "PictureName": "' . 'Null' . '"
+            "Name": "' . $name . '",
+            "Contact": "' . $contact . '",
+            "Email": "' . $email . '",
+            "Password": "' . $password . '",
+            "PictureName": "' . $profilepicture . '"
         }
         ');
+
+    $params = [
+        'TableName' => $tableName,
+        'Item' => $item
+    ];
+
     try {
-        //See if email already exists
-        $response = $dynamodb->getItem(['TableName' => $tableName, 'Key' => ['Email' => ['S' => $_POST['UserEmail']]]]);
-        if (!empty($response['Item'])) {
-            echo('Email already exists');
-        }
-        else {
-            //Make the item in table
-            $dynamodb->putItem(['TableName' => $tableName, 'Item' => $item]);
-            header("location:../Rivendell/SignIn.php");
-        }
+        $result = $dynamodb->putItem($params);
+        header("location:../Rivendell/SignIn.php");
+
     } catch (DynamoDbException $e) {
         header("location:../Rivendell/Error.php");
     }
@@ -46,10 +52,19 @@ if(isset($_POST['SignIn'])) {
 
     $email = $_POST['UserEmail'];
     $password = $_POST['UserPassword'];
+    $key = $marshaler->marshalJson('
+        {   
+            "Email": "' . $email . '"
+        }
+        ');
+    $params = [
+        'TableName' => $tableName,
+        'Key' => $key
+    ];
 
     try {
-        $result = $dynamodb->getItem(['TableName' => $tableName, 'Key' => ['Email' => ['S' => $_POST['UserEmail']]]]);
-        if ($password == $result["Item"]["Password"]["S"]) {
+        $result = $dynamodb->getItem($params);
+        if ($password = $result["Item"]["Password"]["S"]) {
             if (($result["Item"]["Status"]["BOOL"]) == true) {
                 session_start();
                 $_SESSION["Email"] = $email ;
@@ -79,29 +94,41 @@ if(isset($_POST['SignIn'])) {
 //Edit Profile Method
 if( isset($_POST['EditProfile'])) {
     session_start();
-    $ExpressionAttributeValues = [':c' => ['S' => $_POST['UserContact']],
-        ':p' => ['S' => $_POST['UserPassword']],
-        ':n' => ['S' => $_POST['UserName']],
-        ':e' => ['S' => $_POST['UserEmail']]];
+    $name = $_POST['UserName'];
+    $contact = $_POST['UserContact'];
+    $email = $_POST['UserEmail'];
+    $password = $_POST['UserPassword'];
 
+    $key = $marshaler->marshalJson('
+        {   
+            "Email": "' . $email . '"
+        }
+        ');
 
-    $params = ['TableName' => $tableName,
-        'Key' => ['Email' => ['S' => $_POST['UserEmail']]],
-        'UpdateExpression' => 'set Contact = :c, Password = :p, #personName = :n',
+    $eav = $marshaler->marshalJson('
+    {
+        ":c": "' . $contact . '",
+        ":n": "' . $name . '",
+        ":e": "' . $email . '",
+        ":p": "' . $password . '"
+    }
+    ');
+
+    $params = [
+        'TableName' => $tableName,
+        'Key' => $key,
+        'UpdateExpression' =>
+            'set Contact = :c, Password = :p, #personName = :n',
         'ConditionExpression' => 'Email = :e',
         'ExpressionAttributeNames' => ['#personName' => 'Name'],
-        'ExpressionAttributeValues' => $ExpressionAttributeValues,
-        'ReturnValues' => 'ALL_NEW'];
-
+        'ExpressionAttributeValues' => $eav,
+        "ReturnValues" => 'ALL_NEW'
+    ];
     try {
-        $response = $dynamodb->updateItem($params);
-
-        $result = $dynamodb->getItem(['TableName' => $tableName, 'Key' => ['Email' => ['S' => $_POST['UserEmail']]]]);
-        $_SESSION["Name"] = $result["Item"]["Name"]["S"];
+        $result = $dynamodb->updateItem($params);
+        $_SESSION["Name"] = $result["Item"]["Name"]["S"] ;
         $_SESSION["Contact"] = $result["Item"]["Contact"]["S"] ;
         $_SESSION["Password"] = $result["Item"]["Password"]["S"] ;
-
-        echo($result["Item"]["Name"]["S"]);
         header("location:../Rivendell/Profile.php");
 
     } catch (DynamoDbException $e) {
@@ -114,7 +141,7 @@ if( isset($_POST['EditProfile'])) {
 if( isset($_POST['EditProfilePicture'])) {
     session_start();
     $bucket = 'hotelfamily01';
-    $file_Path = 'C:\Users\Acer\Desktop/' . $_POST["ProfilePicture"];
+    $file_Path = 'C:\Users\Acer\Desktop\Leeteuk.jpg';
     $key = $_SESSION["Email"];
 
     try {
@@ -129,23 +156,33 @@ if( isset($_POST['EditProfilePicture'])) {
 
     try{
         $url = $s3->getObjectUrl($bucket, $key);
+        $key = $marshaler->marshalJson('
+        {   
+            "Email": "' . $_SESSION["Email"] . '"
+        }
+        ');
 
-        $ExpressionAttributeValues = [':p' => ['S' => $url],
-            ':e' => ['S' => $key]];
+        $eav = $marshaler->marshalJson('
+            {
+            ":e": "' . $email . '",
+            ":p": "' . $url . '"
+            }
+            ');
 
-
-        $params = ['TableName' => $tableName,
-            'Key' => ['Email' => ['S' => $key]],
-            'UpdateExpression' => 'set PictureName = :p',
+        $params = [
+            'TableName' => $tableName,
+            'Key' => $key,
+            'UpdateExpression' =>
+                'set PictureName = :p',
             'ConditionExpression' => 'Email = :e',
-            'ExpressionAttributeValues' => $ExpressionAttributeValues,
-            'ReturnValues' => 'ALL_NEW'];
-
+            'ExpressionAttributeValues' => $eav,
+            "ReturnValues" => 'ALL_NEW'
+        ];
         try {
             $result = $dynamodb->updateItem($params);
             $_SESSION["Profile"] = $url ;
             header("location:../Rivendell/ProfilePicture.php");
-            echo ($url);
+
         } catch (DynamoDbException $e) {
             header("location:../Rivendell/Error.php");
         }
