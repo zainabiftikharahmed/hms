@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31f16eaa-8a67-4776-b5f0-2b48c2191812" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Rivendell/DeleteRoomPicture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rivendell/Gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/Review.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/Room.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/Room.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/ConfigureRooms.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/ConfigureRooms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/ContactUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/ContactUs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/DeleteBookings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/DeleteBookings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/DeleteComments.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/DeleteComments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/Header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/SetRoomPicture.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/SetRoomPicture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/UserHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/UserHeader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rivendell/Spa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/Spa.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,31 +20,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Room.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/Room.php">
+      <file leaf-file-name="Activities.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rivendell/Activities.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="171" column="39" selection-start-line="171" selection-start-column="39" selection-end-line="171" selection-end-column="39" />
-              <folding>
-                <element signature="e#201#1018#0#PHP" />
-                <element signature="e#1046#3166#0#PHP" />
-                <element signature="e#3194#4019#0#PHP" />
-                <element signature="e#4038#4538#0#PHP" />
-                <element signature="e#4568#5041#0#PHP" />
-                <element signature="e#5089#5562#0#PHP" />
-              </folding>
+            <state>
+              <caret selection-end-line="10" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gallery.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Rivendell/Gallery.php">
+      <file leaf-file-name="Spa.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rivendell/Spa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#5#0#PHP" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Meetings.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Rivendell/Meetings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -101,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/temp.php" />
         <option value="$PROJECT_DIR$/Rivendell/index.php" />
         <option value="$PROJECT_DIR$/Rivendell/SignUp.php" />
         <option value="$PROJECT_DIR$/Rivendell/LogOut.php" />
@@ -114,10 +99,8 @@
         <option value="$PROJECT_DIR$/Rivendell/SignIn.php" />
         <option value="$PROJECT_DIR$/Rivendell/ProfilePicture.php" />
         <option value="$PROJECT_DIR$/Rivendell/EditProfile.php" />
-        <option value="$PROJECT_DIR$/Rivendell/Activities.php" />
         <option value="$PROJECT_DIR$/Rivendell/Bookings.php" />
         <option value="$PROJECT_DIR$/Rivendell/Dining.php" />
-        <option value="$PROJECT_DIR$/Rivendell/Meetings.php" />
         <option value="$PROJECT_DIR$/Rivendell/PackagesAndOffers.php" />
         <option value="$PROJECT_DIR$/Rivendell/RoomsAndSuites.php" />
         <option value="$PROJECT_DIR$/Rivendell/SearchRoom.php" />
@@ -152,6 +135,9 @@
         <option value="$PROJECT_DIR$/Rivendell/DeleteRoomPicture.php" />
         <option value="$PROJECT_DIR$/Controllers/Room.php" />
         <option value="$PROJECT_DIR$/Rivendell/Gallery.php" />
+        <option value="$PROJECT_DIR$/Rivendell/Activities.php" />
+        <option value="$PROJECT_DIR$/Rivendell/Spa.php" />
+        <option value="$PROJECT_DIR$/Rivendell/Meetings.php" />
       </list>
     </option>
   </component>
@@ -191,6 +177,11 @@
               <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cloud" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Rivendell" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -269,12 +260,12 @@
       <workItem from="1524247705483" duration="1860000" />
       <workItem from="1524249678189" duration="70142000" />
       <workItem from="1524856053367" duration="25743000" />
-      <workItem from="1524976899228" duration="12359000" />
+      <workItem from="1524976899228" duration="13120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160346000" />
+    <option name="totallyTimeSpent" value="161107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -339,7 +330,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Rivendell/Spa.php" />
     <entry file="file://$PROJECT_DIR$/Rivendell/Dining.php" />
     <entry file="file://$PROJECT_DIR$/Rivendell/EditProfile.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -362,8 +352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Meetings.php" />
-    <entry file="file://$PROJECT_DIR$/Rivendell/PackagesAndOffers.php" />
     <entry file="file://$PROJECT_DIR$/Rivendell/RoomsAndSuites.php" />
     <entry file="file://$PROJECT_DIR$/Rivendell/SignUp.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -544,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Activities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rivendell/AdminHeader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -654,11 +635,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Rivendell/Gallery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        <state relative-caret-position="462">
+          <caret line="72" column="20" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
           <folding>
             <element signature="e#0#5#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/PackagesAndOffers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Activities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Spa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Meetings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
         </state>
       </provider>
     </entry>
