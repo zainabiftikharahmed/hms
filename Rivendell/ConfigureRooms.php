@@ -28,6 +28,9 @@ else
                         <div class="form-group ">
                             <button type="submit" class="log-btn" style="color: white" onClick="form.action='SetRoomPicture.php'">Set Room Picture</a></button>
                         </div>
+                        <div class="form-group ">
+                            <button type="submit" class="log-btn" style="color: white" onClick="form.action='DeleteRoomPicture.php'">Delete Room Picture</a></button>
+                        </div>
                     </div>
                 </form>
             </div>

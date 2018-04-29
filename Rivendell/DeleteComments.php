@@ -31,6 +31,7 @@ do {
             $ids[$x + 1][0] = $marshaler->unmarshalValue($item['Identifier']);
             $ids[$x + 1][1] = $marshaler->unmarshalValue($item['Email']);
             $ids[$x + 1][2] = $marshaler->unmarshalValue($item['Message']);
+            $ids[$x + 1][3] = $marshaler->unmarshalValue($item['Rating']);
 
             $x++;
         }
@@ -53,16 +54,18 @@ do {
                                 <table>
                                     <tbody>
                                     <tr>
-                                        <th style="height:15px; width:250px; background:#2c9cb6; color:white" class="form-control">Identifier</th>
-                                        <th style="height:15px; width:250px; background:#2c9cb6; color:white" class="form-control">Email</th>
-                                        <th style="height:15px; width:750px; background:#2c9cb6; color:white" class="form-control">Message</th>
-                                        <th style="height:15px; width:250px; background:#2c9cb6; color:white" class="form-control">Delete</th>
+                                        <th style="height:15px; width:250px; background:#2c9cb6; color:white" class="form-control">IDENTIFIER</th>
+                                        <th style="height:15px; width:250px; background:#2c9cb6; color:white" class="form-control">EMAIL</th>
+                                        <th style="height:15px; width:250px; background:#2c9cb6; color:white" class="form-control">RATING</th>
+                                        <th style="height:15px; width:750px; background:#2c9cb6; color:white" class="form-control">MESSAGE</th>
+                                        <th style="height:15px; width:250px; background:#2c9cb6; color:white" class="form-control">DELETE</th>
                                     </tr>
                                     <!--Use a while loop to make a table row for every DB row-->
                                     <?php foreach ($ids as $selected) { ?>
                                         <tr>
                                             <th style="width:250px" class="form-control"><?php  echo ($selected[0]); ?></th>
                                             <th style="width:250px" class="form-control"><?php  echo ($selected[1]); ?></th>
+                                            <th style="width:250px" class="form-control"><?php  echo ($selected[3]); ?></th>
                                             <th style="width:250px" class="form-control"><?php  echo ($selected[2]); ?></th>
                                             <th style="width:250px" class="form-control">
                                                 <label>

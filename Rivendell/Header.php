@@ -16,8 +16,8 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/Custom.js"></script>
-    <link rel="icon" href="css/img/CodeItResortAndSpaFavicon.png" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="css/img/CodeItResortAndSpaFavicon.png" type="image/png" sizes="32x32">
 </head>
 <body id="home">
 <div id="container-wrap">
@@ -29,7 +29,7 @@
             <div class="sub-nav">
                 <div class="container">
                     <ul>
-                        <li><a href="ContactUs.php">CONTACT US </a></li>
+                        <li><a href="Gallery.php"> GALLERY </a></li>
                         <li><a href="SignIn.php">LOGIN </a></li>
                         <li><a href="SignUp.php">SIGNUP </a></li>
                     </ul>

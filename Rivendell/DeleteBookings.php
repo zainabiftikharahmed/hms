@@ -57,12 +57,12 @@ do {
                                 <table>
                                     <tbody>
                                     <tr>
-                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">Identifier</th>
-                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">Email</th>
-                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">CheckIn</th>
-                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">CheckOut</th>
-                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">Room</th>
-                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">Set Available</th>
+                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">IDENTIFIER</th>
+                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">EMAIL</th>
+                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">CHECK IN</th>
+                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">CHECK OUT</th>
+                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">ROOM NUMBER</th>
+                                        <th style="height:15px; width:200px; background:#2c9cb6; color:white" class="form-control">SET AVAILABLE</th>
                                     </tr>
                                     <!--Use a while loop to make a table row for every DB row-->
                                     <?php foreach ($ids as $selected) { ?>

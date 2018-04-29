@@ -10,7 +10,6 @@ else
     header("location:Error.php");
 ?>
 
-
 <section id="main">
     <div id="content" class="secondary">
         <div class="full-width-container">
@@ -26,6 +25,17 @@ else
                 <div class="intro col col-2-3">
                     <h2>Send Us Your Feedback!</h2>
                     <form action="../Controllers/Review.php" method="post">
+                        <div class="form-group ">
+                            <select class="form-control" name="Stars" id="Stars" required>
+                                <option  selected disabled>Rate Rivendell</option>
+                                <option value="★☆☆☆☆">1</option>
+                                <option value="★★☆☆☆">2</option>
+                                <option value="★★★☆☆">3</option>
+                                <option value="★★★★☆">4</option>
+                                <option value="★★★★★">5</option>
+                            </select>
+                            <i class="fa fa-star"></i>
+                        </div>
                         <div class="form-group ">
                             <textarea type="text" name="ReviewSubmitted" class="form-control" placeholder="Say Something Nice " id="Review" required>
                         </textarea>

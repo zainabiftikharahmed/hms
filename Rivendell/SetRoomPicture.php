@@ -16,11 +16,11 @@ else
             <div class="hover-fade"></div>
             <div class="blurimage"><img src="css/img/SignInAndSignUp.jpg" alt="" /></div>
             <div class="content-wrap">
-                <form action="SetRoomPicture" method="post">
+                <form action="../Controllers/Room.php" method="post">
                     <div style="top:10%;" class="login-form">
                         <h1>Room Picture</h1><br>
                         <div class="form-group " >
-                            <input type="number" name="RoomID" class="form-control" placeholder="Room ID" id="Name" value="RoomID">
+                            <input type="number" name="RoomNumber" class="form-control" placeholder="Room ID" id="Name" value="RoomID">
                             <i class="fa fa-home"></i>
                         </div>
                         <div class="form-group ">
@@ -29,7 +29,7 @@ else
                                 <input type="file" name="Picture" placeholder="Picture" id="Picture" class="upload"/>
                             </div>
                         </div>
-                        <button type="submit" class="log-btn" >Save Changes</button>
+                        <button type="submit" name="SetRoomPicture" class="log-btn" >Save Changes</button>
                     </div>
                 </form>
             </div>

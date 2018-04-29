@@ -21,7 +21,9 @@ if(isset($_POST['AddReview'])){
     $item = $marshaler->marshalJson('{
             "Identifier": "' . $id . '",
             "Email": "' . $_SESSION["Email"] . '",
-            "Message": "' . $_POST['ReviewSubmitted'] . '"
+            "Message": "' . $_POST['ReviewSubmitted'] . '",
+            "Rating": "' . $_POST['Stars'] . '"
+            
         }
         ');
 

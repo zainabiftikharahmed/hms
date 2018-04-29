@@ -146,3 +146,42 @@ if(isset($_POST['DeleteRoom'])) {
 }
 
 
+
+//Add pictures for a room
+if(isset($_POST["SetRoomPicture"])){
+    session_start();
+    $bucket = 'hotelfamily02';
+    $file_Path = 'C:\Users\Acer\Desktop/' . $_POST["Picture"];
+    $key = $_POST['RoomNumber'];
+
+    try {
+        $result = $s3->putObject([
+            'Bucket' => $bucket,
+            'Key' => $key,
+            'SourceFile' => $file_Path,
+        ]);
+        header("location:../Rivendell/Gallery.php");
+
+    } catch (S3Exception $e) {
+        echo $e->getMessage() . "\n";
+    }
+}
+
+
+//Add pictures for a room
+if(isset($_POST["DeleteRoomPicture"])){
+    session_start();
+    $bucket = 'hotelfamily02';
+    $key = $_POST['RoomNumber'];
+
+    try {
+        $result = $s3->deleteObject([
+            'Bucket' => $bucket,
+            'Key' => $key,
+        ]);
+        header("location:../Rivendell/Gallery.php");
+
+    } catch (S3Exception $e) {
+        echo $e->getMessage() . "\n";
+    }
+}
