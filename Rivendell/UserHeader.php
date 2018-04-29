@@ -16,6 +16,8 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/Custom.js"></script>
+    <script>$( function(){$( "#CheckInDate" ).datepicker();$( "#CheckOutDate" ).datepicker();} );</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="css/img/CodeItResortAndSpaFavicon.png" type="image/png" sizes="32x32">
 </head>
 <body id="home">

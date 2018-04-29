@@ -15,7 +15,6 @@ $tableName = 'Review';
 //Adds Review in database
 if(isset($_POST['AddReview'])){
     session_start();
-
     $id = uniqid();
 
     //JSON item to add
@@ -36,7 +35,7 @@ if(isset($_POST['AddReview'])){
         else {
             //Make the item in table
             $dynamodb->putItem(['TableName' => $tableName, 'Item' => $item]);
-            header("location:../Rivendell/index.php");
+            header("location:../Rivendell/Comments.php");
         }
     } catch (DynamoDbException $e) {
         header("location:../Rivendell/Error.php");
@@ -45,8 +44,24 @@ if(isset($_POST['AddReview'])){
 
 
 
+//Deletes user's comments
+if(isset($_POST['DeleteComments'])) {
+    if (!empty($_POST['comments'])) {
+        $checked_count = count($_POST['comments']);
+        $x = 0;
 
-if(isset($_POST['DeleteComment'])){
+        foreach ($_POST['comments'] as $selected) {
+            $p  = (explode("/", $selected));
+            $key = $marshaler->marshalJson('{ "Identifier": "' . $p[0] . '", "Email": "' . $p[1] . '"}');
+            try {
+                $result = $dynamodb->deleteItem([
+                    'TableName' => $tableName,
+                    'Key' => $key]);
+                header("location:../Rivendell/DeleteComments.php");
 
-
+            } catch (DynamoDbException $e) {
+                header("location:../Rivendell/Error.php");
+            }
+        }
+    }
 }

@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Controllers/Booking.php" description="    $item = $marshaler-&gt;marshalJson('{&#10;           ..." line="68" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="31f16eaa-8a67-4776-b5f0-2b48c2191812" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Controllers/Review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rivendell/obsolete/Booking.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rivendell/obsolete/Review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rivendell/obsolete/Room.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rivendell/obsolete/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tempp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rivendell/AdvancedOptions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rivendell/Comments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rivendell/DeleteBookings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rivendell/DeleteComments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rivendell/DeleteRooms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rivendell/DeleteUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/Booking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/Comments.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/Room.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/Room.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/Activities.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/Activities.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rivendell/AdminHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/AdminHeader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/Bookings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/Bookings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rivendell/ContactUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/ContactUs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/Dining.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/Dining.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/EditProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/EditProfile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rivendell/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/Header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/Meetings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/Meetings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/PackagesAndOffers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/PackagesAndOffers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/ProfilePicture.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/ProfilePicture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/RoomsAndSuites.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/RoomsAndSuites.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rivendell/SearchRoom.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/obsolete/SearchRoom.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rivendell/SearchRoomResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/SearchRoomResults.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rivendell/SetDates.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/SetDates.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rivendell/UserHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rivendell/UserHeader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rivendell/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempp.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +37,23 @@
     <pharPath>C:\Users\Acer\Desktop\Cloud\composer.phar</pharPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Controllers/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="182" column="49" selection-start-line="182" selection-start-column="49" selection-end-line="182" selection-end-column="49" />
+              <folding>
+                <element signature="e#204#1139#0#PHP" />
+                <element signature="e#1158#2364#0#PHP" />
+                <element signature="e#2389#3632#0#PHP" />
+                <element signature="e#3658#4946#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,6 +75,12 @@
       <find>butto</find>
       <find>button</find>
       <find>con</find>
+      <find>cond</find>
+      <find>params</find>
+      <find>key</find>
+      <find>.css</find>
+      <find>fil</find>
+      <find>ima</find>
     </findStrings>
     <replaceStrings>
       <replace>php</replace>
@@ -75,20 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Header.php" />
-        <option value="$PROJECT_DIR$/ManagerHeader.php" />
-        <option value="$PROJECT_DIR$/SignUp.php" />
-        <option value="$PROJECT_DIR$/Spa.php" />
-        <option value="$PROJECT_DIR$/SignIn.php" />
-        <option value="$PROJECT_DIR$/Controllers/SignUp.php" />
-        <option value="$PROJECT_DIR$/Controllers/Admin/User.php" />
-        <option value="$PROJECT_DIR$/Controllers/Admin/Comments.php" />
-        <option value="$PROJECT_DIR$/Controllers/Admin/Room.php" />
-        <option value="$PROJECT_DIR$/Rivendell/Spa.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/Controllers/User/Comments.php" />
-        <option value="$PROJECT_DIR$/Controllers/User/Room.php" />
-        <option value="$PROJECT_DIR$/Controllers/User/Booking.php" />
         <option value="$PROJECT_DIR$/Controllers/User/User.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/temp.php" />
@@ -102,7 +105,6 @@
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/Rivendell/AddRoom.php" />
         <option value="$PROJECT_DIR$/Rivendell/SetRoomPrice.php" />
-        <option value="$PROJECT_DIR$/Controllers/Room.php" />
         <option value="$PROJECT_DIR$/Rivendell/SetRoomFeatures.php" />
         <option value="$PROJECT_DIR$/Rivendell/SignIn.php" />
         <option value="$PROJECT_DIR$/Rivendell/ProfilePicture.php" />
@@ -114,18 +116,33 @@
         <option value="$PROJECT_DIR$/Rivendell/PackagesAndOffers.php" />
         <option value="$PROJECT_DIR$/Rivendell/RoomsAndSuites.php" />
         <option value="$PROJECT_DIR$/Rivendell/SearchRoom.php" />
-        <option value="$PROJECT_DIR$/Rivendell/SearchRoomResults.php" />
-        <option value="$PROJECT_DIR$/Rivendell/SetDates.php" />
-        <option value="$PROJECT_DIR$/Controllers/Booking.php" />
         <option value="$PROJECT_DIR$/Controllers/Comments.php" />
         <option value="$PROJECT_DIR$/Rivendell/Profile.php" />
         <option value="$PROJECT_DIR$/tempp.php" />
-        <option value="$PROJECT_DIR$/Controllers/User.php" />
-        <option value="$PROJECT_DIR$/Rivendell/ContactUs.php" />
-        <option value="$PROJECT_DIR$/Controllers/Review.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Rivendell/Comments.php" />
+        <option value="$PROJECT_DIR$/Rivendell/ConfigureComments.php" />
+        <option value="$PROJECT_DIR$/Rivendell/ConfigureUsers.php" />
+        <option value="$PROJECT_DIR$/Rivendell/Advanced.php" />
+        <option value="$PROJECT_DIR$/Rivendell/Footer.php" />
+        <option value="$PROJECT_DIR$/Rivendell/DeleteRooms.php" />
+        <option value="$PROJECT_DIR$/Rivendell/DeleteComments.php" />
+        <option value="$PROJECT_DIR$/Rivendell/temp/index.php" />
         <option value="$PROJECT_DIR$/Rivendell/AdminHeader.php" />
-        <option value="$PROJECT_DIR$/Rivendell/UserHeader.php" />
         <option value="$PROJECT_DIR$/Rivendell/Header.php" />
+        <option value="$PROJECT_DIR$/Rivendell/obsolete/ApproveRoom.php" />
+        <option value="$PROJECT_DIR$/Rivendell/css/style.css" />
+        <option value="$PROJECT_DIR$/Rivendell/ContactUs.php" />
+        <option value="$PROJECT_DIR$/Rivendell/UserHeader.php" />
+        <option value="$PROJECT_DIR$/Rivendell/SetDates.php" />
+        <option value="$PROJECT_DIR$/Controllers/Room.php" />
+        <option value="$PROJECT_DIR$/Rivendell/DeleteUsers.php" />
+        <option value="$PROJECT_DIR$/Rivendell/SearchRoomResults.php" />
+        <option value="$PROJECT_DIR$/Rivendell/AdvancedOptions.php" />
+        <option value="$PROJECT_DIR$/Controllers/Review.php" />
+        <option value="$PROJECT_DIR$/Rivendell/DeleteBookings.php" />
+        <option value="$PROJECT_DIR$/Controllers/Booking.php" />
+        <option value="$PROJECT_DIR$/Controllers/User.php" />
       </list>
     </option>
   </component>
@@ -139,7 +156,7 @@
     <packageJsonPaths />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="20" />
     <option name="y" value="40" />
     <option name="width" value="1346" />
@@ -164,7 +181,7 @@
             <path>
               <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cloud" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Rivendell" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -201,26 +218,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.Review.php">
-    <configuration name="Comments.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Cloud/Controllers/Comments.php" />
+  <component name="RunManager" selected="PHP Script.DeleteBookings.php">
     <configuration name="Booking.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Controllers/Booking.php" />
-    <configuration name="Review.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Controllers/Review.php" />
-    <configuration name="User.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Controllers/User.php" />
-    <configuration name="tempp.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/tempp.php" />
+    <configuration name="ContactUs.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Rivendell/ContactUs.php" />
+    <configuration name="DeleteBookings.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Rivendell/DeleteBookings.php" />
+    <configuration name="Room.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Controllers/Room.php" />
+    <configuration name="SearchRoomResults.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Rivendell/SearchRoomResults.php" />
     <list>
-      <item itemvalue="PHP Script.User.php" />
+      <item itemvalue="PHP Script.Room.php" />
+      <item itemvalue="PHP Script.ContactUs.php" />
       <item itemvalue="PHP Script.Booking.php" />
-      <item itemvalue="JavaScript Debug.Comments.php" />
-      <item itemvalue="PHP Script.Review.php" />
-      <item itemvalue="PHP Script.tempp.php" />
+      <item itemvalue="PHP Script.SearchRoomResults.php" />
+      <item itemvalue="PHP Script.DeleteBookings.php" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.Review.php" />
-        <item itemvalue="PHP Script.User.php" />
-        <item itemvalue="PHP Script.tempp.php" />
-        <item itemvalue="JavaScript Debug.Comments.php" />
+        <item itemvalue="PHP Script.DeleteBookings.php" />
         <item itemvalue="PHP Script.Booking.php" />
+        <item itemvalue="PHP Script.SearchRoomResults.php" />
+        <item itemvalue="PHP Script.ContactUs.php" />
+        <item itemvalue="PHP Script.Room.php" />
       </list>
     </recent_temporary>
   </component>
@@ -241,22 +258,25 @@
       <workItem from="1524132937073" duration="2156000" />
       <workItem from="1524222415828" duration="19405000" />
       <workItem from="1524247705483" duration="1860000" />
-      <workItem from="1524249678189" duration="57299000" />
+      <workItem from="1524249678189" duration="70142000" />
+      <workItem from="1524856053367" duration="25743000" />
+      <workItem from="1524976899228" duration="4178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109401000" />
+    <option name="totallyTimeSpent" value="152165000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.5119237" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.09062003" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.40858504" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49853587" weight="0.2845787" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24304539" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -276,13 +296,14 @@
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24304539" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="9" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290938" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
@@ -290,9 +311,8 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43561208" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,36 +326,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Rivendell/ApproveRoom.php" />
-    <entry file="file://$PROJECT_DIR$/Rivendell/ManagerHeader.php" />
-    <entry file="file://$PROJECT_DIR$/Controllers/Admin/Comments.php" />
-    <entry file="file://$PROJECT_DIR$/Controllers/Admin/Room.php" />
-    <entry file="file://$PROJECT_DIR$/Controllers/Admin/User.php" />
-    <entry file="file://$PROJECT_DIR$/aws/aws-autoloader.php" />
-    <entry file="file://$PROJECT_DIR$/composer-setup.php" />
-    <entry file="file://$USER_HOME$/Downloads/aws/Aws/Sdk.php" />
-    <entry file="file://$PROJECT_DIR$/aws/GuzzleHttp/Promise/TaskQueue.php" />
-    <entry file="file://$PROJECT_DIR$/aws/GuzzleHttp/Promise/Promise.php" />
-    <entry file="file://$PROJECT_DIR$/aws/Aws/Credentials/InstanceProfileProvider.php" />
-    <entry file="file://$PROJECT_DIR$/aws/GuzzleHttp/Handler/StreamHandler.php" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer/vendor/aws/aws-sdk-php/src/DynamoDb/Marshaler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="321" selection-start-line="321" selection-end-line="321" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rivendell/SetRoomPicture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -343,23 +337,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/lol.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#165#210#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/lol.js" />
     <entry file="file://$PROJECT_DIR$/Rivendell/SetRoomPrice.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -367,62 +345,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/SetRoomFeatures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="22" column="130" selection-start-line="22" selection-start-column="130" selection-end-line="22" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/SignIn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="30" column="87" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Spa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Activities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/AddRoom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Bookings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/ConfigureRooms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Dining.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Spa.php" />
+    <entry file="file://$PROJECT_DIR$/Rivendell/Activities.php" />
+    <entry file="file://$PROJECT_DIR$/Rivendell/Dining.php" />
     <entry file="file://$PROJECT_DIR$/Rivendell/EditProfile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -437,9 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Footer.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rivendell/LogOut.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -447,27 +369,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Meetings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/PackagesAndOffers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/RoomsAndSuites.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Meetings.php" />
+    <entry file="file://$PROJECT_DIR$/Rivendell/PackagesAndOffers.php" />
+    <entry file="file://$PROJECT_DIR$/Rivendell/RoomsAndSuites.php" />
     <entry file="file://$PROJECT_DIR$/Rivendell/SignUp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -475,58 +379,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/SearchRoom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/SearchRoomResults.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/SetDates.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="82" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/Room.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#201#821#0#PHP" />
-            <element signature="e#849#2753#0#PHP" />
-            <element signature="e#2781#3664#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/Comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-          <folding>
-            <element signature="e#190#225#0#PHP" />
-            <element signature="e#228#775#0#PHP" />
-            <element signature="e#778#814#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/Booking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/SearchRoom.php" />
+    <entry file="file://$PROJECT_DIR$/Controllers/Comments.php" />
     <entry file="file://$PROJECT_DIR$/Rivendell/Profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -534,81 +388,270 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp.php">
+    <entry file="file://$PROJECT_DIR$/temp.php" />
+    <entry file="file://$PROJECT_DIR$/Rivendell/obsolete/SearchRoom.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        <state relative-caret-position="422">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tempp.php">
+    <entry file="file://$PROJECT_DIR$/tempp.php" />
+    <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="425">
+          <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/SignIn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/ConfigureRooms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="31" lean-forward="true" selection-end-line="36" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rivendell/ProfilePicture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="162">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="54" />
           <folding>
             <element signature="e#6#87#0#PHP" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/User.php">
+    <entry file="file://$PROJECT_DIR$/Rivendell/AddRoom.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="40" selection-end-column="1" />
+        <state relative-caret-position="374">
+          <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/SetRoomFeatures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
           <folding>
-            <element signature="e#1158#2377#0#PHP" />
-            <element signature="e#2402#3645#0#PHP" />
-            <element signature="e#3671#4959#0#PHP" />
+            <element signature="e#0#5#0#PHP" />
+            <element signature="e#296#301#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/temp/Rate.php" />
+    <entry file="file://$PROJECT_DIR$/Rivendell/temp/index.php" />
+    <entry file="file://$PROJECT_DIR$/Rivendell/AdminHeader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="117" selection-start-line="18" selection-start-column="117" selection-end-line="18" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/obsolete/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" lean-forward="true" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/obsolete/ApproveRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="31" lean-forward="true" selection-end-line="34" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rivendell/ContactUs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="67" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="67" />
+        <state relative-caret-position="213">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/Review.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/UserHeader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="63" lean-forward="true" selection-start-line="17" selection-start-column="63" selection-end-line="18" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/AdminHeader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="97" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="18" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rivendell/Header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="97" selection-start-line="18" selection-start-column="97" selection-end-line="18" selection-end-column="97" />
+        <state relative-caret-position="68">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rivendell/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="272">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="2738" column="1" lean-forward="true" selection-start-line="2738" selection-start-column="1" selection-end-line="2738" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/SetDates.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="28" column="68" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Bookings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/DeleteUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#5#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/DeleteRooms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="84" column="34" lean-forward="true" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#5#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/SearchRoomResults.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer/vendor/aws/aws-sdk-php/src/DynamoDb/Marshaler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/DeleteComments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="84" column="31" lean-forward="true" selection-start-line="7" selection-end-line="84" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/AdvancedOptions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="37" column="151" selection-start-line="37" selection-start-column="151" selection-end-line="37" selection-end-column="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/Room.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="e#201#1018#0#PHP" />
+            <element signature="e#1046#3166#0#PHP" />
+            <element signature="e#3194#4019#0#PHP" />
+            <element signature="e#4038#4538#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/Review.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+          <folding>
+            <element signature="e#215#1153#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/DeleteBookings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="85" column="70" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
+          <folding>
+            <element signature="e#1659#1724#0#HTML" expanded="true" />
+            <element signature="e#1806#1871#0#HTML" expanded="true" />
+            <element signature="e#1948#2013#0#HTML" expanded="true" />
+            <element signature="e#2247#2312#0#HTML" expanded="true" />
+            <element signature="e#2287#2352#0#HTML" expanded="true" />
+            <element signature="e#2092#2157#0#HTML" expanded="true" />
+            <element signature="e#2498#2517#0#HTML" expanded="true" />
+            <element signature="e#2623#2642#0#HTML" expanded="true" />
+            <element signature="e#2748#2767#0#HTML" expanded="true" />
+            <element signature="e#3365#3384#0#HTML" expanded="true" />
+            <element signature="e#3491#3510#0#HTML" expanded="true" />
+            <element signature="e#2873#2892#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/Booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+          <folding>
+            <element signature="e#215#1580#0#PHP" />
+            <element signature="e#1621#2969#0#PHP" />
+            <element signature="e#3034#3741#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/UserHeader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="20" column="75" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rivendell/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="117" selection-start-line="19" selection-start-column="117" selection-end-line="19" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="182" column="49" selection-start-line="182" selection-start-column="49" selection-end-line="182" selection-end-column="49" />
+          <folding>
+            <element signature="e#204#1139#0#PHP" />
+            <element signature="e#1158#2364#0#PHP" />
+            <element signature="e#2389#3632#0#PHP" />
+            <element signature="e#3658#4946#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>

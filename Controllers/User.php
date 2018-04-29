@@ -48,7 +48,7 @@ if(isset($_POST['SignIn'])) {
     $password = $_POST['UserPassword'];
 
     try {
-        $result = $dynamodb->getItem(['TableName' => $tableName, 'Key' => ['Email' => ['S' => $_POST['UserEmail']]]]);
+        $result = $dynamodb->getItem(['TableName' => $tableName, 'Key' => ['Email' => ['S' => $email]]]);
         if ($password == $result["Item"]["Password"]["S"]) {
             if (($result["Item"]["Status"]["BOOL"]) == true) {
                 session_start();
@@ -159,5 +159,27 @@ if( isset($_POST['EditProfilePicture'])) {
 //Delete User  Method
 if( isset($_POST['DeleteUser'])){
 
+    $bucket = 'hotelfamily01';
 
+    if(!empty($_POST['users'])) {
+        $checked_count = count($_POST['users']);
+        foreach ($_POST['users'] as $selected) {
+            try {
+                $response = $dynamodb->deleteItem(['TableName' => $tableName, 'Key' => ['Email' => ['S' => $selected]]]);
+                $key = $selected;
+
+                try {
+                    $result = $s3->deleteObject([
+                        'Bucket' => $bucket,
+                        'Key' => $key
+                    ]);
+                } catch (S3Exception $e) {
+                    header("location:../Rivendell/Error.php");
+                }
+            } catch (DynamoDbException $e) {
+                header("location:../Rivendell/Error.php");
+            }
+        }
+        header("location:../Rivendell/DeleteUsers.php");
+    }
 }

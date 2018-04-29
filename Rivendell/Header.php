@@ -17,6 +17,7 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/Custom.js"></script>
     <link rel="icon" href="css/img/CodeItResortAndSpaFavicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id="home">
 <div id="container-wrap">

@@ -15,27 +15,24 @@ $tableName = 'Room';
 
 //Add a room
 if(isset($_POST['AddRoom'])) {
-    $room = $_POST['RoomNumber'];
-    $description = $_POST['RoomDescription'];
-    $price = $_POST['RoomPrice'];
-
 
     $item = $marshaler->marshalJson('{
-            "Number": ' . $room . ',
-            "Description": "' . $description . '",
-            "Price": ' . $price . '
+            "Number": ' . $_POST['RoomNumber'] . ',
+            "Description": "' . $_POST['RoomDescription'] . '",
+            "Price": ' . $_POST['RoomPrice'] . '
         }
         ');
-
-    $params = [
-        'TableName' => $tableName,
-        'Item' => $item
-    ];
-
     try {
-        $result = $dynamodb->putItem($params);
-        header("location:../Rivendell/index.php");
-
+        //See if email already exists
+        $response = $dynamodb->getItem(['TableName' => $tableName, 'Key' => ['Number' => ['N' => $_POST['RoomNumber']]]]);
+        if (!empty($response['Item'])) {
+            echo('Room already exists');
+        }
+        else {
+            //Make the item in table
+            $dynamodb->putItem(['TableName' => $tableName, 'Item' => $item]);
+            header("location:../Rivendell/DeleteRooms.php");
+        }
     } catch (DynamoDbException $e) {
         header("location:../Rivendell/Error.php");
     }
@@ -44,14 +41,8 @@ if(isset($_POST['AddRoom'])) {
 
 //Add features to a room
 if(isset($_POST['SetFeatures'])){
-    $room = $_POST['RoomNumber'];
 
-    $key = $marshaler->marshalJson('
-        {   
-            "Number": ' . $room . '
-        }
-        ');
-
+    $features;
     if(!empty($_POST['features'])) {
         $checked_count = count($_POST['features']);
         $x = 0;
@@ -60,83 +51,77 @@ if(isset($_POST['SetFeatures'])){
             $features[$x++] = $selected;
         }
 
-        $eav;
+        $ExpressionAttributeValues ;
 
         switch ($checked_count) {
             case 1:
-                $eav = $marshaler->marshalJson('{
-                ":r": ' . $room . ',
+                $ExpressionAttributeValues  = $marshaler->marshalJson('{
+                ":r": ' . $_POST['RoomNumber'] . ',
                 ":f": [ "' . $features[0] . '"]}');
                 break;
             case 2:
-                $eav = $marshaler->marshalJson('{
-                ":r": ' . $room . ',
+                $ExpressionAttributeValues  = $marshaler->marshalJson('{
+                ":r": ' . $_POST['RoomNumber'] . ',
                 ":f": [ "' . $features[0] . '" , "' . $features[1] . '"]}');
                 break;
             case 3:
-                $eav = $marshaler->marshalJson('{
-                ":r": ' . $room . ',
+                $ExpressionAttributeValues  = $marshaler->marshalJson('{
+                ":r": ' . $_POST['RoomNumber'] . ',
                 ":f": [ "' . $features[0] . '" , "' . $features[1] . '", "' . $features[2] . '"]}');
                 break;
             case 4:
-                $eav = $marshaler->marshalJson('{
-                ":r": ' . $room . ',
+                $ExpressionAttributeValues  = $marshaler->marshalJson('{
+                ":r": ' . $_POST['RoomNumber'] . ',
                 ":f": [ "' . $features[0] . '" , "' . $features[1] . '", "' . $features[2] . '", "' . $features[3] . '"]}');
                 break;
         }
 
         $params = [
             'TableName' => $tableName,
-            'Key' => $key,
+            'Key' => ['Number' => ['N' => $_POST['RoomNumber']]],
             'UpdateExpression' => 'set Features = :f',
             'ConditionExpression' => '#roomNumber = :r',
             'ExpressionAttributeNames' => ['#roomNumber' => 'Number'],
-            'ExpressionAttributeValues' => $eav,
+            'ExpressionAttributeValues' =>  $ExpressionAttributeValues ,
             'ReturnValues' => 'UPDATED_NEW'
         ];
 
         try {
             $result = $dynamodb->updateItem($params);
-            header("location:../Rivendell/index.php");
+            header("location:../Rivendell/DeleteRooms.php");
 
         } catch (DynamoDbException $e) {
-            echo ("$e");
+            header("location:../Rivendell/Error.php");
         }
     }
+    else
+        header("location:../Rivendell/SetRoomFeatures.php");
 }
 
 
 //Add features to a room
 if(isset($_POST['SetRoomPrice'])) {
-    $room = $_POST['RoomNumber'];
-    $price = $_POST['RoomPrice'];
 
-    $key = $marshaler->marshalJson('
-        {   
-            "Number": ' . $room . '
-        }
-        ');
-
-    $eav = $marshaler->marshalJson('
+     $ExpressionAttributeValues  = $marshaler->marshalJson('
     {
-        ":r": ' . $room . ',
-        ":p": ' . $price . '
+        ":r": ' . $_POST['RoomNumber'] . ',
+        ":p": ' . $_POST['RoomPrice'] . '
     }
     ');
 
     $params = [
         'TableName' => $tableName,
-        'Key' => $key,
+        'Key' => ['Number' => ['N' => $_POST['RoomNumber']]],
         'UpdateExpression' =>
             'set Price = :p',
         'ConditionExpression' => '#roomNumber = :r',
         'ExpressionAttributeNames' => ['#roomNumber' => 'Number'],
-        'ExpressionAttributeValues' => $eav,
+        'ExpressionAttributeValues' => $ExpressionAttributeValues,
         'ReturnValues' => 'UPDATED_NEW'
     ];
     try {
         $result = $dynamodb->updateItem($params);
-        header("location:../Rivendell/index.php");
+        header("location:../Rivendell/DeleteRooms.php");
 
     } catch (DynamoDbException $e) {
         header("location:../Rivendell/Error.php");
@@ -145,28 +130,19 @@ if(isset($_POST['SetRoomPrice'])) {
 
 
 //Delete a room
-if(isset($_POST['DeleteRoom'])){
+if(isset($_POST['DeleteRoom'])) {
 
-
+    if(!empty($_POST['rooms'])) {
+        $checked_count = count($_POST['rooms']);
+        foreach ($_POST['rooms'] as $selected) {
+            try {
+                $response = $dynamodb->deleteItem(['TableName' => $tableName, 'Key' => ['Number' => ['N' => $selected]]]);
+            } catch (DynamoDbException $e) {
+                header("location:../Rivendell/Error.php");
+            }
+        }
+        header("location:../Rivendell/DeleteRooms.php");
+    }
 }
 
 
-//Make room available after checkout
-if (isset($_POST['MakeAvailable'])){
-
-
-}
-
-
-//Add pictures for a room
-if (isset($_POST['AddPictures'])){
-
-
-}
-
-
-//Delete pictures for a room
-if (isset($_POST['DeletePictures'])){
-
-
-}

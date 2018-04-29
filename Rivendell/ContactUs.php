@@ -27,7 +27,7 @@ else
                     <h2>Send Us Your Feedback!</h2>
                     <form action="../Controllers/Review.php" method="post">
                         <div class="form-group ">
-                        <textarea type="text" name="ReviewSubmitted" class="form-control" placeholder="Say Something Nice " id="Review" required>
+                            <textarea type="text" name="ReviewSubmitted" class="form-control" placeholder="Say Something Nice " id="Review" required>
                         </textarea>
                             <i class="fa fa-envelope"></i>
                         </div>
